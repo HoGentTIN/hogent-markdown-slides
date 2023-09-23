@@ -1,0 +1,8 @@
+{
+    "title": "HOGENT - Slides",
+    "listingTemplate": "./index-template.html",
+    "separator": "^---$",
+    "staticDir": "html",
+    "staticDirs": ["img"],
+    "theme": "https://hogenttin.github.io/hogent-revealjs/reveal.js/css/theme/hogent.css"
+}
