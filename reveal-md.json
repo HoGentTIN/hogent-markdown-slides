@@ -1,9 +1,10 @@
 {
+    "glob": "slides/*.md",
     "highlightTheme": "vs",
     "listingTemplate": "./index-template.html",
     "separator": "^\\s*---\\s*$",
     "staticDir": "html",
-    "staticDirs": ["img"],
-    "theme": "https://hogenttin.github.io/hogent-revealjs/reveal.js/css/theme/hogent.css",
-    "title": "HOGENT - Slides"
+    "theme": "custom.css",
+    "title": "HOGENT - Slides",
+    "verticalSeparator": "^\\s*-v-\\s*$"
 }

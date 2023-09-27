@@ -11,6 +11,10 @@
 
 ## Usage
 
+## Files
+
+Put your markdown files in [](./slides/) and your images in [](./img/).
+
 ### Creating slides (debugging)
 
 To develop with live reloading:
@@ -26,6 +30,8 @@ To generate a static site:
 ```
 reveal-md --static
 ```
+
+This will create the directory [](./html/). You can always delete this directory if you want to.
 
 ### Generate PDF
 
@@ -81,6 +87,7 @@ You can add them to [reveal.json](./reveal.json)
 ## Bugs
 
 -   https://github.com/webpro/reveal-md/issues/439
+-   https://github.com/webpro/reveal-md/issues/381
 -   https://github.com/yihui/xaringan/issues/75 (why you can't reference CSS from raw GitHub files)
 
 ## Links
