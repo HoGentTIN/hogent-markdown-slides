@@ -1,5 +1,5 @@
 {
-    "glob": "slides/*.md",
+    "glob": "**/!(README).md",
     "highlightTheme": "vs",
     "listingTemplate": "./index-template.html",
     "separator": "^\\s*---\\s*$",
