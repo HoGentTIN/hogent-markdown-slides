@@ -1,4 +1,9 @@
+
 # README
+
+## Demo
+
+You can see the slides of this repository at https://hogenttin.github.io/hogent-revealmd/ . Play with it to see what it can do!
 
 ## Installation
 
