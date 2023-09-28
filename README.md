@@ -18,7 +18,7 @@ You can see the slides of this repository at https://hogenttin.github.io/hogent-
 
 ## Files
 
-Put your markdown files in [](./slides/) and your images in [](./img/).
+Put your markdown files in the root directory and your images in [](./img/).
 
 ### Creating slides (debugging)
 
