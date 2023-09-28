@@ -48,6 +48,10 @@ reveal-md <slides.md> --print slides.pdf --print-size A4
 
 _The resulting PDF isn't very nice though ... :/ ._
 
+### Automatic deployment
+
+This repo autmatically builds the slides and pushes them to https://hogenttin.github.io/hogent-revealmd/ whenever a commit is pushed to the `main` branch. This is done using using [GitHub actions](https://docs.github.com/en/actions). You can find the workflow in the [.github](./.github) folder.
+
 ## Configuration
 
 ### Theme
