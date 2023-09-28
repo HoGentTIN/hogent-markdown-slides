@@ -16,9 +16,9 @@ You can see the slides of this repository at https://hogenttin.github.io/hogent-
 
 ## Usage
 
-## Files
+### Files
 
-Put your markdown files in the root directory and your images in [](./img/).
+Put your markdown files in the root directory and your images in the [img](./img/) folder.
 
 ### Creating slides (debugging)
 
@@ -36,7 +36,7 @@ To generate a static site:
 reveal-md --static
 ```
 
-This will create the directory [](./html/). You can always delete this directory if you want to.
+This will create the [html](./html/) folder. You can always delete this directory if you want to.
 
 ### Generate PDF
 
@@ -54,7 +54,7 @@ _The resulting PDF isn't very nice though ... :/ ._
 
 The theme used is https://hogenttin.github.io/hogent-revealjs/reveal.js/css/theme/hogent.css from https://github.com/HoGentTIN/hogent-revealjs . Check that repo for the most up-to-date version.
 
-If you want a custom theme, you can change the `theme` option in [reveal-md.json](./reveal-md.json) to e.g. `style.css` and put an `style.css` in the root folder of the project.
+If you want a custom theme, you can change the `theme` option in [reveal-md.json](./reveal-md.json) to e.g. `style.css` and put a file `style.css` in the root folder of the project.
 
 ### Landing page
 
@@ -85,7 +85,11 @@ Possible mustache variables are:
 }
 ```
 
-### Other [reveal.js](https://revealjs.com/) options
+### [reveal-md](https://github.com/webpro/reveal-md) options
+
+You can add them to [reveal-md.json](./reveal-md.json)
+
+### [reveal.js](https://revealjs.com/) options
 
 You can add them to [reveal.json](./reveal.json)
 
@@ -93,6 +97,7 @@ You can add them to [reveal.json](./reveal.json)
 
 -   https://github.com/webpro/reveal-md/issues/439
 -   https://github.com/webpro/reveal-md/issues/381
+-   https://github.com/webpro/reveal-md/issues/389#issuecomment-1105290037
 -   https://github.com/yihui/xaringan/issues/75 (why you can't reference CSS from raw GitHub files)
 
 ## Links
