@@ -35,7 +35,7 @@ To generate a static site:
 reveal-md --static
 ```
 
-This will create the [html](./html/) folder. You can always delete this directory if you want to.
+This will create the `html` folder. You can always delete this directory if you want to.
 
 ### Generate PDF
 
