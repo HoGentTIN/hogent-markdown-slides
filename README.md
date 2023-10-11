@@ -109,6 +109,7 @@ You can add them to [reveal.json](./reveal.json)
 -   https://github.com/webpro/reveal-md/issues/439
 -   https://github.com/webpro/reveal-md/issues/381
 -   https://github.com/webpro/reveal-md/issues/389#issuecomment-1105290037
+-   https://github.com/prettier/prettier/issues/5019
 -   https://github.com/yihui/xaringan/issues/75 (why you can't reference CSS from raw GitHub files)
 
 ## Links

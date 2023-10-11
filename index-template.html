@@ -14,6 +14,7 @@
             {{#files}}
             <li>
                 <a href="{{filePath}}" title="{{title}}" target="_blank">
+                    <!-- prettier-ignore -->
                     {{#title}}
                         {{.}} ({{filePath}})
                     {{/title}}
@@ -22,6 +23,7 @@
                     {{/title}}
                 </a>
             </li>
+            <!-- prettier-ignore -->
             {{/files}}
             {{^files}}
                 There are no slides.
