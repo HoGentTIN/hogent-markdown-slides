@@ -57,7 +57,7 @@ A [prettier](https://prettier.io/docs/en/) config has been added in [`.prettierr
 
 ### Linting
 
-A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint.jsonc]([./.markdownlint.jsonc) .
+A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint.jsonc](./.markdownlint.jsonc) .
 
 ## Configuration
 
