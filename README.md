@@ -6,8 +6,8 @@ You can see the slides of this repository at https://hogenttin.github.io/hogent-
 
 ## Installation
 
-1. Install [nodejs](https://nodejs.org).
-2. Install [reveal-md](https://github.com/webpro/reveal-md):
+1. Install [nodejs](https://nodejs.org) .
+2. Install [reveal-md](https://github.com/webpro/reveal-md) :
 
     ```console
     npm install -g reveal-md
@@ -49,15 +49,15 @@ _The resulting PDF isn't very nice though ... :/ ._
 
 ### Automatic deployment
 
-This repo autmatically builds the slides and pushes them to https://hogenttin.github.io/hogent-revealmd/ whenever a commit is pushed to the `main` branch. This is done using using [GitHub actions](https://docs.github.com/en/actions). You can find the workflow in the [.github](./.github) folder.
+This repo autmatically builds the slides and pushes them to https://hogenttin.github.io/hogent-revealmd/ whenever a commit is pushed to the `main` branch. This is done using using [GitHub actions](https://docs.github.com/en/actions) . You can find the workflow in the [.github](./.github) folder.
 
 ### Formatting
 
-A [prettier](https://prettier.io/docs/en/) config has been added in [](./.prettierrc.json) .
+A [prettier](https://prettier.io/docs/en/) config has been added in [`.prettierrc.json5`](./.prettierrc.json5) .
 
 ### Linting
 
-A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in []([./.markdownlint.json) .
+A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint.jsonc]([./.markdownlint.jsonc) .
 
 ## Configuration
 
@@ -69,7 +69,7 @@ If you want a custom theme, you can change the `theme` option in [reveal-md.json
 
 ### Landing page
 
-You can change the template `index-template.html` to create a nice landing page for your course. It uses the [Mustache template engine](https://mustache.github.io/).
+You can change the template [index-template.html](./index-template.html) to create a nice landing page for your course. It uses the [Mustache template engine](https://mustache.github.io/) .
 
 Possible mustache variables are:
 
@@ -98,11 +98,11 @@ Possible mustache variables are:
 
 ### [reveal-md](https://github.com/webpro/reveal-md) options
 
-You can add them to [reveal-md.json](./reveal-md.json)
+You can add them to [reveal-md.json](./reveal-md.json) .
 
 ### [reveal.js](https://revealjs.com/) options
 
-You can add them to [reveal.json](./reveal.json)
+You can add them to [reveal.json](./reveal.json) .
 
 ## Bugs
 
