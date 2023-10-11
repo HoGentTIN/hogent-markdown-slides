@@ -1,4 +1,3 @@
-
 # README
 
 ## Demo
@@ -10,7 +9,7 @@ You can see the slides of this repository at https://hogenttin.github.io/hogent-
 1. Install [nodejs](https://nodejs.org).
 2. Install [reveal-md](https://github.com/webpro/reveal-md):
 
-    ```
+    ```console
     npm install -g reveal-md
     ```
 
@@ -24,7 +23,7 @@ Put your markdown files in the root directory and your images in the [img](./img
 
 To develop with live reloading:
 
-```
+```console
 reveal-md <slides.md> --watch
 ```
 
@@ -32,7 +31,7 @@ reveal-md <slides.md> --watch
 
 To generate a static site:
 
-```
+```console
 reveal-md --static
 ```
 
@@ -42,7 +41,7 @@ This will create the [html](./html/) folder. You can always delete this director
 
 To generate a PDF:
 
-```
+```console
 reveal-md <slides.md> --print slides.pdf --print-size A4
 ```
 
@@ -51,6 +50,14 @@ _The resulting PDF isn't very nice though ... :/ ._
 ### Automatic deployment
 
 This repo autmatically builds the slides and pushes them to https://hogenttin.github.io/hogent-revealmd/ whenever a commit is pushed to the `main` branch. This is done using using [GitHub actions](https://docs.github.com/en/actions). You can find the workflow in the [.github](./.github) folder.
+
+### Formatting
+
+A [prettier](https://prettier.io/docs/en/) config has been added in [](./.prettierrc.json) .
+
+### Linting
+
+A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in []([./.markdownlint.json) .
 
 ## Configuration
 

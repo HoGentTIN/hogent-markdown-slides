@@ -1,0 +1,9 @@
+{
+    "line-length": false,
+    "no-bare-urls": false,
+    "no-inline-html": false,
+    "no-trailing-punctuation": false,
+    "single-h1": {
+        "front_matter_title": ""
+    }
+}

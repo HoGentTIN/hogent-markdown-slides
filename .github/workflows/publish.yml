@@ -1,8 +1,6 @@
 on:
     push:
-        branches:
-            - main
-
+    pull_request:
     # Allows you to run this workflow manually from the Actions tab
     workflow_dispatch:
 
@@ -13,10 +11,22 @@ permissions:
     id-token: write
 
 jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: DavidAnson/markdownlint-cli2-action@v13
+              with:
+                  globs: "**/*.md"
+            - uses: gaurav-nelson/github-action-markdown-link-check@v1
+              with:
+                  use-quiet-mode: "yes"
+
     deploy:
         environment:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
+        needs: lint
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
