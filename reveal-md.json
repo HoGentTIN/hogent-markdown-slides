@@ -4,7 +4,7 @@
     "listingTemplate": "./index-template.html",
     "separator": "^\\s*---\\s*$",
     "staticDir": "html",
-    "theme": "https://hogenttin.github.io/hogent-revealjs/reveal.js/css/theme/hogent.css",
+    "theme": "theme.css",
     "title": "HOGENT - Slides",
     "verticalSeparator": "^\\s*-v-\\s*$"
 }

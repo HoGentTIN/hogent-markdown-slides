@@ -1,0 +1,177 @@
+/*
+ *  https://www.hogent.be/dit-is-hogent/huisstijl/huisstijl-kleuren/
+ *  https://fonts.google.com/specimen/Montserrat
+ *  https://fonts.google.com/specimen/Inconsolata
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:ital,wght@0,400;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+body {
+    background: url("./img/HOGENT.png");
+    background-position: 95% 90%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
+.reveal {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 60px;
+    line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #4ca2d5;
+    font-weight: 800;
+    margin-bottom: 0.75em;
+}
+
+.reveal h1 {
+    font-size: 2.5em;
+}
+
+.reveal h2 {
+    font-size: 1.6em;
+}
+
+.reveal h3 {
+    font-size: 1.3em;
+}
+
+.reveal h4 {
+    font-size: 1em;
+}
+
+b,
+strong {
+    color: #ef8767;
+    font-weight: bold;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+a {
+    color: #4ca2d5;
+}
+
+a:hover {
+    color: #c3bbaf;
+    text-decoration: none;
+}
+
+code {
+    color: #4ca2d5;
+    font-family: "Inconsolata", monospace;
+}
+
+pre code {
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 0.55em;
+    line-height: 1.25em;
+    white-space: pre-wrap;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: #c3bbaf;
+}
+
+p {
+    margin-bottom: 0.75em;
+}
+
+blockquote {
+    background-color: #ffffff;
+    font-style: italic;
+    border-style: solid;
+    border-color: #c3bbaf;
+    border-width: 5px;
+    padding: 0.5em;
+}
+
+/* TODO */
+img,
+video,
+iframe {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+table {
+    font-size: 0.75em;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+}
+
+th,
+td {
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+}
+
+th {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+ol,
+ul {
+    text-align: left;
+    margin-left: 1em;
+}
+
+.reveal ol {
+    list-style-type: decimal;
+}
+
+.reveal ul {
+    list-style-type: disc;
+}
+
+.reveal ul ul {
+    list-style-type: square;
+}
+
+.reveal ul ul ul {
+    list-style-type: circle;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-left: 10vh;
+}
+
+.reveal .progress {
+    height: 1vh;
+    background: #ffffff;
+}
+
+.reveal .progress span {
+    background: #4ca2d5;
+}
+
+.reveal .controls {
+    color: #4ca2d5;
+}
+
+.reveal .slide-number {
+    font-size: 1rem;
+    color: #4ca2d5;
+    background-color: transparent;
+}
+
+.reveal .slide-number a {
+    text-decoration: none;
+}

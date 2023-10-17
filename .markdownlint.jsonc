@@ -1,6 +1,7 @@
 {
     "line-length": false,
     "list-marker-space": false, // https://github.com/prettier/prettier/issues/5019
+    "no-alt-text": false,
     "no-bare-urls": false,
     "no-inline-html": false,
     "no-trailing-punctuation": false,

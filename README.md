@@ -1,5 +1,7 @@
 # README
 
+Build slides using markdown, whilst adhering to the principles learned from the [How to avoid death By PowerPoint](https://www.youtube.com/watch?v=Iwpi1Lm6dFo) TEDx Talk.
+
 ## Demo
 
 You can see the slides of this repository at https://hogenttin.github.io/hogent-revealmd/ . Play with it to see what it can do!
@@ -21,10 +23,16 @@ Put your markdown files in the root directory and your images in the [img](./img
 
 ### Creating slides (debugging)
 
-To develop with live reloading:
+To develop a slideshow with live reloading:
 
 ```console
 reveal-md <slides.md> --watch
+```
+
+Or all slideshows:
+
+```console
+reveal-md . --watch
 ```
 
 ### Create static site (html)
@@ -53,7 +61,7 @@ This repo autmatically builds the slides and pushes them to https://hogenttin.gi
 
 ### Formatting
 
-A [prettier](https://prettier.io/docs/en/) config has been added in [`.prettierrc.json5`](./.prettierrc.json5) .
+A [prettier](https://prettier.io/docs/en/) config has been added in [.prettierrc.json5](./.prettierrc.json5) .
 
 ### Linting
 
@@ -63,9 +71,7 @@ A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been add
 
 ### Theme
 
-The theme used is https://hogenttin.github.io/hogent-revealjs/reveal.js/css/theme/hogent.css from https://github.com/HoGentTIN/hogent-revealjs . Check that repo for the most up-to-date version.
-
-If you want a custom theme, you can change the `theme` option in [reveal-md.json](./reveal-md.json) to e.g. `style.css` and put a file `style.css` in the root folder of the project.
+If you want another theme, you can change the `theme` option in [reveal-md.json](./reveal-md.json) to point to another CSS file. You can also use an existing link like https://hogenttin.github.io/hogent-revealjs/reveal.js/css/theme/hogent.css from https://github.com/HoGentTIN/hogent-revealjs .
 
 ### Landing page
 
