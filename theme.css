@@ -10,7 +10,7 @@
 body {
     background: url("./img/HOGENT.png");
     background-position: 95% 90%;
-    background-size: 100px;
+    background-size: 50px;
     background-repeat: no-repeat;
 }
 
@@ -79,8 +79,9 @@ pre code {
     line-height: 1.25em;
     white-space: pre-wrap;
     border-style: solid;
-    border-width: 0.1em;
+    border-width: 3px;
     border-color: #c3bbaf;
+    border-radius: 10px;
 }
 
 p {
@@ -91,8 +92,9 @@ blockquote {
     background-color: #ffffff;
     font-style: italic;
     border-style: solid;
+    border-width: 3px;
     border-color: #c3bbaf;
-    border-width: 5px;
+    border-radius: 10px;
     padding: 0.5em;
 }
 
@@ -108,6 +110,12 @@ table {
     font-size: 0.75em;
     border-collapse: collapse;
     margin-bottom: 1.5em;
+
+    /* Somehow the table doesn't get the .reveal class,
+     * so we need this for centering the table 
+     */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 th,
@@ -174,4 +182,13 @@ ol ul {
 
 .reveal .slide-number a {
     text-decoration: none;
+}
+
+.multicolumn {
+    /* https://stackoverflow.com/a/44392145 */
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+    gap: 5vw;
+    margin-bottom: 0.5em;
 }
