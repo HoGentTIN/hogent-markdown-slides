@@ -4,20 +4,17 @@
  *  https://fonts.google.com/specimen/Inconsolata
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:ital,wght@0,400;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
 body {
-    background: url("./img/HOGENT.png");
-    background-position: 95% 90%;
-    background-size: 50px;
+    background: url("https://www.hogent.be/sites/hogent/assets/Image/logo-1.jpg");
+    background-position: 100% 90%;
+    background-size: 300px;
     background-repeat: no-repeat;
-}
-
-.reveal {
     font-family: "Montserrat", "Arial", sans-serif;
-    font-size: 60px;
-    line-height: 1.5em;
+    font-weight: 400;
+    font-size: 4rem;
 }
 
 h1,
@@ -28,22 +25,23 @@ h5,
 h6 {
     color: #4ca2d5;
     font-weight: 800;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.5em;
+    line-height: 1.25;
 }
 
-.reveal h1 {
+h1 {
     font-size: 2.5em;
 }
 
-.reveal h2 {
+h2 {
     font-size: 1.6em;
 }
 
-.reveal h3 {
+h3 {
     font-size: 1.3em;
 }
 
-.reveal h4 {
+h4 {
     font-size: 1em;
 }
 
@@ -75,8 +73,7 @@ code {
 pre code {
     background-color: #ffffff;
     text-align: left;
-    font-size: 0.55em;
-    line-height: 1.25em;
+    font-size: 0.6em;
     white-space: pre-wrap;
     border-style: solid;
     border-width: 3px;
@@ -85,12 +82,14 @@ pre code {
 }
 
 p {
-    margin-bottom: 0.75em;
+    line-height: 1.3;
+    margin-bottom: 0.5em;
 }
 
 blockquote {
     background-color: #ffffff;
     font-style: italic;
+    line-height: 1.3;
     border-style: solid;
     border-width: 3px;
     border-color: #c3bbaf;
@@ -102,14 +101,15 @@ blockquote {
 img,
 video,
 iframe {
-    max-width: 95%;
-    max-height: 95%;
+    max-width: 95vw;
+    max-height: 95vh;
 }
 
 table {
     font-size: 0.75em;
     border-collapse: collapse;
-    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 
     /* Somehow the table doesn't get the .reveal class,
      * so we need this for centering the table 
@@ -121,7 +121,7 @@ table {
 th,
 td {
     border-style: solid;
-    border-width: 5px;
+    border-width: 3px;
     border-color: black;
     padding: 0.25em 0.5em 0.25em 0.5em;
 }
@@ -132,10 +132,10 @@ th {
     font-weight: bold;
 }
 
-ol,
-ul {
+li {
     text-align: left;
-    margin-left: 1em;
+    line-height: 1.3;
+    margin-left: 3ch;
 }
 
 .reveal ol {
@@ -152,13 +152,6 @@ ul {
 
 .reveal ul ul ul {
     list-style-type: circle;
-}
-
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-    margin-left: 10vh;
 }
 
 .reveal .progress {
