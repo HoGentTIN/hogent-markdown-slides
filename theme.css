@@ -79,6 +79,7 @@ pre code {
     border-width: 3px;
     border-color: #c3bbaf;
     border-radius: 10px;
+    margin-bottom: 0.5em;
 }
 
 p {
@@ -95,20 +96,21 @@ blockquote {
     border-color: #c3bbaf;
     border-radius: 10px;
     padding: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /* TODO */
 img,
 video,
 iframe {
-    max-width: 95vw;
-    max-height: 95vh;
+    max-width: 95%;
+    max-height: 95%;
+    margin-bottom: 0.5em;
 }
 
 table {
     font-size: 0.75em;
     border-collapse: collapse;
-    margin-top: 0.5em;
     margin-bottom: 0.5em;
 
     /* Somehow the table doesn't get the .reveal class,
@@ -118,18 +120,19 @@ table {
     margin-right: auto;
 }
 
-th,
-td {
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
-    padding: 0.25em 0.5em 0.25em 0.5em;
+th {
+    font-weight: bold;
 }
 
-th {
-    background-color: black;
-    color: white;
-    font-weight: bold;
+td {
+    border-top-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+th,
+td {
+    padding: 0.25em 0.75em 0.25em 0.75em;
 }
 
 li {
