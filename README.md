@@ -15,11 +15,9 @@ You can see the slides of this repository at https://hogenttin.github.io/hogent-
     npm install -g reveal-md
     ```
 
-## Usage
+## Basic usage
 
-### Files
-
-Put your markdown files in the root directory and your images in the [img](./img/) folder.
+Edit, add or delete put your markdown files in the root directory and your images in the [img](./img/) folder.
 
 ### Creating slides (debugging)
 
@@ -53,11 +51,15 @@ To generate a PDF:
 reveal-md <slides.md> --print slides.pdf --print-size A4
 ```
 
-_The resulting PDF isn't very nice though ... :/ ._
+_The resulting PDF isn't very nice though at the moment ... :/ ._
+
+## Advanced
+
+**You don't really need this** if you want to keep things simple, but it's here if you want an example.
 
 ### Automatic deployment
 
-This repo autmatically builds the slides and pushes them to https://hogenttin.github.io/hogent-revealmd/ whenever a commit is pushed to the `main` branch. This is done using using [GitHub actions](https://docs.github.com/en/actions) . You can find the workflow in the [.github](./.github) folder.
+This repo automatically builds the slides and pushes them to https://hogenttin.github.io/hogent-revealmd/ whenever a commit is pushed to the `main` branch. This is done using using [GitHub actions](https://docs.github.com/en/actions) . You can find the workflow in the [.github](./.github) folder.
 
 ### Formatting
 
