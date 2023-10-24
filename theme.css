@@ -17,6 +17,12 @@ body {
     font-size: 4rem;
 }
 
+/* For the index page */
+body.landing {
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
 h1,
 h2,
 h3,
