@@ -43,6 +43,8 @@ reveal-md --static
 
 This will create the `html` folder. You can always delete this directory if you want to.
 
+_This step is only necessary if you want to host your slides yourself. If you use Github actions (see below), this step is not needed: it will be done automatically when you push to the repository._
+
 ### Generate PDF
 
 To generate a PDF:
@@ -75,34 +77,14 @@ A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been add
 
 If you want another theme, you can change the `theme` option in [reveal-md.json](./reveal-md.json) to point to another CSS file. You can also use an existing link like https://hogenttin.github.io/hogent-revealjs/reveal.js/css/theme/hogent.css from https://github.com/HoGentTIN/hogent-revealjs .
 
+If you copy or fork this repo, but always want to keep the theme of your slides at any time automatically in sync with this repo, you can ... .
+
+1. Set the `theme` option to the URL https://hogenttin.github.io/hogent-revealmd/_assets/theme.css .
+2. Delete the local CSS file.
+
 ### Landing page
 
 You can change the template [index-template.html](./index-template.html) to create a nice landing page for your course. It uses the [Mustache template engine](https://mustache.github.io/) .
-
-Possible mustache variables are:
-
-```json
-{
-    "base": "",
-    "themeUrl": "./_assets/./hogent.css",
-    "pageTitle": "HOGENT - Slides",
-    "files": [
-        {
-            "filePath": "h0.html",
-            "fileName": "h0.html",
-            "absPath": "C:\\Users\\martijn\\git\\hogent-revealmd\\h0.html",
-            "title": "Hoofdstuk 0: gebruik."
-        },
-        {
-            "filePath": "h1.html",
-            "fileName": "h1.html",
-            "absPath": "C:\\Users\\martijn\\git\\hogent-revealmd\\h1.html",
-            "title": "Hoofdstuk 1: mogelijkheden."
-        }
-        // ...
-    ]
-}
-```
 
 ### [reveal-md](https://github.com/webpro/reveal-md) options
 
@@ -114,11 +96,8 @@ You can add them to [reveal.json](./reveal.json) .
 
 ## Bugs
 
--   https://github.com/webpro/reveal-md/issues/439
--   https://github.com/webpro/reveal-md/issues/381
 -   https://github.com/webpro/reveal-md/issues/389#issuecomment-1105290037
 -   https://github.com/prettier/prettier/issues/5019
--   https://github.com/yihui/xaringan/issues/75 (why you can't reference CSS from raw GitHub files)
 
 ## Links
 
