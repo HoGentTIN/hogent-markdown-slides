@@ -112,6 +112,8 @@ This repo automatically builds the slides and pushes them to https://hogenttin.g
 
 ### Formatting
 
+An [editorconfig](https://editorconfig.org/) config has been added in [.editorconfig](./.editorconfig) .
+
 A [prettier](https://prettier.io/docs/en/) config has been added in [.prettierrc.json5](./.prettierrc.json5) .
 
 ### Linting
