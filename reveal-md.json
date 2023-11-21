@@ -2,6 +2,7 @@
     "glob": "**/!(README).md",
     "highlightTheme": "vs",
     "listingTemplate": "./index-template.html",
+    "scripts": ["https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin/plugin/mermaid/mermaid.min.js", "plugins.js"],
     "separator": "^\\s*---\\s*$",
     "staticDir": "html",
     "theme": "theme.css",

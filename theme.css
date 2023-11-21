@@ -9,7 +9,7 @@
 
 body {
     background: url("https://www.hogent.be/sites/hogent/assets/Image/logo-1.jpg");
-    background-position: 100% 90%;
+    background-position: 105% 90%;
     background-size: 300px;
     background-repeat: no-repeat;
     font-family: "Montserrat", "Arial", sans-serif;
@@ -76,7 +76,7 @@ code {
     font-family: "Inconsolata", monospace;
 }
 
-pre code {
+pre code:not(.mermaid) {
     background-color: #ffffff;
     text-align: left;
     font-size: 0.6em;

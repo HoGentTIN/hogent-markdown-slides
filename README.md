@@ -17,7 +17,7 @@ You can see the slides of this repository at https://hogenttin.github.io/hogent-
 
 ## Basic usage
 
-Edit, add or delete put your markdown files in the root directory and your images in the [img](./img/) folder.
+Edit, add or delete put your markdown files in the root directory and your images in the [img](./img/) folder. That's all!
 
 ### Creating slides (debugging)
 
@@ -53,23 +53,9 @@ reveal-md <slides.md> --print slides.pdf --print-size A4
 
 _The resulting PDF isn't very nice though at the moment ... :/ ._
 
-## Advanced
-
-**You don't really need this** if you want to keep things simple, but it's here if you want an example.
-
-### Automatic deployment
-
-This repo automatically builds the slides and pushes them to https://hogenttin.github.io/hogent-revealmd/ whenever a commit is pushed to the `main` branch. This is done using using [GitHub actions](https://docs.github.com/en/actions) . You can find the workflow in the [.github](./.github) folder.
-
-### Formatting
-
-A [prettier](https://prettier.io/docs/en/) config has been added in [.prettierrc.json5](./.prettierrc.json5) .
-
-### Linting
-
-A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint.jsonc](./.markdownlint.jsonc) .
-
 ## Configuration
+
+:bulb: **You don't have to change these files or settings** if you want to keep things simple. In that case, just ignore this section.
 
 ### Theme
 
@@ -111,6 +97,26 @@ You can add them to [reveal-md.json](./reveal-md.json) .
 ### [reveal.js](https://revealjs.com/) options
 
 You can add them to [reveal.json](./reveal.json) .
+
+### Reveal.js plugins
+
+You can add additional functionality using [Reveal.js plugins](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware). These are not standard supported in reveal-md, but can be [enabled](https://github.com/webpro/reveal-md/issues/102#issuecomment-692494366). E.g., the [Mermaid](https://github.com/zjffun/reveal.js-mermaid-plugin) plugin for drawing graphs is added in this repo as an example on how to do it.
+
+## Additional tools
+
+:bulb: **You don't need this** if you want to keep things simple. In that case, just ignore this section. Otherwise, it's here if you want an example.
+
+### Automatic deployment
+
+This repo automatically builds the slides and pushes them to https://hogenttin.github.io/hogent-revealmd/ whenever a commit is pushed to the `main` branch. This is done using using [GitHub actions](https://docs.github.com/en/actions) . You can find the workflow in the [.github](./.github) folder.
+
+### Formatting
+
+A [prettier](https://prettier.io/docs/en/) config has been added in [.prettierrc.json5](./.prettierrc.json5) .
+
+### Linting
+
+A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint.jsonc](./.markdownlint.jsonc) .
 
 ## Bugs
 
