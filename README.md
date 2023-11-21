@@ -2,24 +2,42 @@
 
 Build slides using markdown, whilst adhering to the principles learned from the [How to avoid death By PowerPoint](https://www.youtube.com/watch?v=Iwpi1Lm6dFo) TEDx Talk.
 
-## Demo
+You can see the slides of this repository as a demo at https://hogenttin.github.io/hogent-revealmd/ . Play with it to see what it can do!
 
-You can see the slides of this repository at https://hogenttin.github.io/hogent-revealmd/ . Play with it to see what it can do!
+-   [Basic usage](#basic-usage)
+    -   [Installation](#installation)
+    -   [How do I use this?](#how-do-i-use-this)
+    -   [Live preview](#live-preview)
+    -   [Create static site (HTML)](#create-static-site-html)
+    -   [Generate PDF](#generate-pdf)
+-   [Configuration](#configuration)
+    -   [Theme](#theme)
+    -   [Landing page](#landing-page)
+    -   [reveal-md options](#reveal-md-options)
+    -   [reveal.js options](#revealjs-options)
+    -   [Reveal.js plugins](#revealjs-plugins)
+-   [Additional tools](#additional-tools)
+    -   [Automatic deployment](#automatic-deployment)
+    -   [Formatting](#formatting)
 
-## Installation
+## Basic usage
+
+### Installation
 
 1. Install [nodejs](https://nodejs.org) .
 2. Install [reveal-md](https://github.com/webpro/reveal-md) :
 
     ```console
-    npm install -g reveal-md
+    npm install --global reveal-md
     ```
 
-## Basic usage
+### How do I use this?
 
-Edit, add or delete put your markdown files in the root directory and your images in the [img](./img/) folder. That's all!
+Edit, add or delete put your markdown files in the [docs](./docs/) folder. **That's all to get started!** :rocket:
 
-### Creating slides (debugging)
+### Live preview
+
+Reveal-md allows you to start up a live preview, so you can instantly see how your slides look like whilst editing the markdown files.
 
 To develop a slideshow with live reloading:
 
@@ -33,7 +51,7 @@ Or all slideshows:
 reveal-md . --watch
 ```
 
-### Create static site (html)
+### Create static site (HTML)
 
 To generate a static site:
 
@@ -43,7 +61,7 @@ reveal-md --static
 
 This will create the `html` folder. You can always delete this directory if you want to.
 
-_This step is only necessary if you want to host your slides yourself. If you use Github actions (see below), this step is not needed: it will be done automatically when you push to the repository._
+_This step is only necessary if you want to host your slides yourself on a webserver. If you use Github actions (see below), this step is not needed: it will be done automatically when you push to the repository._
 
 ### Generate PDF
 
