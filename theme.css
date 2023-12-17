@@ -113,12 +113,16 @@ blockquote {
     margin-bottom: 0.5em;
 }
 
-/* TODO */
+/**
+ * TODO
+ * Please don't ask me why % for width and vh for height, it just works like magic. I'm sorry ... .
+ */
 img,
 video,
-iframe {
+iframe,
+pre code {
     max-width: 95%;
-    max-height: 95%;
+    max-height: 75vh;
     margin-bottom: 0.5em;
 }
 
@@ -155,19 +159,24 @@ li {
     margin-left: 3ch;
 }
 
-.reveal ol {
+.reveal section > ul,
+.reveal section > ol {
+    margin-bottom: 0.5em;
+}
+
+.reveal section ol {
     list-style-type: decimal;
 }
 
-.reveal ul {
+.reveal section ul {
     list-style-type: disc;
 }
 
-.reveal ul ul {
+.reveal section ul ul {
     list-style-type: square;
 }
 
-.reveal ul ul ul {
+.reveal section ul ul ul {
     list-style-type: circle;
 }
 
