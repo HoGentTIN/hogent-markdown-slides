@@ -19,6 +19,9 @@ You can see the slides of this repository as a demo at https://hogenttin.github.
 -   [Additional tools](#additional-tools)
     -   [Automatic deployment](#automatic-deployment)
     -   [Formatting](#formatting)
+    -   [Linting](#linting)
+-   [Bugs](#bugs)
+-   [Links](#links)
 
 ## Basic usage
 
@@ -127,4 +130,6 @@ A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been add
 
 ## Links
 
--   Inspired by https://github.com/HoGentTIN/hogent-revealjs/ .
+-   Inspired by the work of [Bert Van Vreckem](https://github.com/bertvv) at https://github.com/HoGentTIN/hogent-revealjs
+-   https://github.com/webpro/reveal-md
+-   https://revealjs.com/
