@@ -16,9 +16,8 @@
 }
 
 body {
-    background: url("https://www.hogent.be/sites/hogent/assets/Image/logo-1.jpg");
-    background-position: 105% 90%;
-    background-size: 300px;
+    background: url("https://www.hogent.be/themes/hogent/assets/images/HOGENT_Logo.png");
+    background-position: right 1% bottom 15%;
     background-repeat: no-repeat;
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
