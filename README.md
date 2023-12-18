@@ -86,8 +86,21 @@ If you want another theme, you can change the `theme` option in [reveal-md.json]
 
 If you copy or fork this repo, but always want to keep the theme of your slides at any time automatically in sync with this repo, you can ... .
 
-1. Set the `theme` option to the URL https://hogenttin.github.io/hogent-revealmd/_assets/theme.css .
-2. Delete the local CSS file.
+a. Set the `theme` option to the URL https://hogenttin.github.io/hogent-revealmd/_assets/theme.css and delete the local CSS file.
+
+or
+
+b. Change `theme.css` so you import https://hogenttin.github.io/hogent-revealmd/_assets/theme.css and then you can add CSS overrides below:
+
+```css
+@import url(https://hogenttin.github.io/hogent-revealmd/_assets/theme.css);
+
+/* Add your overrides here, e.g. ... */
+
+ul {
+    color: red;
+}
+```
 
 ### Landing page
 
