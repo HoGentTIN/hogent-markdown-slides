@@ -138,7 +138,6 @@ A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been add
 
 ## Bugs
 
--   https://github.com/webpro/reveal-md/issues/389#issuecomment-1105290037
 -   https://github.com/prettier/prettier/issues/5019
 
 ## Links
