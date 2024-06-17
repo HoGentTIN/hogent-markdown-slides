@@ -1,0 +1,19 @@
+# https://pre-commit.com/hooks.html
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-case-conflict
+      - id: end-of-file-fixer
+      - id: requirements-txt-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.13.0
+    hooks:
+      - id: markdownlint-cli2
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.29.0
+    hooks:
+      - id: yamllint
+        args: [--strict]

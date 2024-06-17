@@ -30,7 +30,7 @@ You can see the slides of this repository as a demo at https://hogenttin.github.
 1. Install [nodejs](https://nodejs.org) .
 2. Install [reveal-md](https://github.com/webpro/reveal-md) :
 
-    ```console
+    ```bash
     npm install --global reveal-md
     ```
 
@@ -44,13 +44,13 @@ Reveal-md allows you to start up a live preview, so you can instantly see how yo
 
 To develop a slideshow with live reloading:
 
-```console
+```bash
 reveal-md <slides.md> --watch
 ```
 
 Or all slideshows:
 
-```console
+```bash
 reveal-md . --watch
 ```
 
@@ -58,7 +58,7 @@ reveal-md . --watch
 
 To generate a static site:
 
-```console
+```bash
 reveal-md --static
 ```
 
@@ -70,7 +70,7 @@ _This step is only necessary if you want to host your slides yourself on a webse
 
 To generate a PDF:
 
-```console
+```bash
 reveal-md <slides.md> --print slides.pdf --print-size A4
 ```
 
@@ -128,20 +128,26 @@ This repo automatically builds the slides and pushes them to https://hogenttin.g
 
 ### Formatting
 
-An [editorconfig](https://editorconfig.org/) config has been added in [.editorconfig](./.editorconfig) .
+An [editorconfig](https://editorconfig.org/) config has been added in [.editorconfig](./.editorconfig). This works nicely together with [prettier](https://prettier.io/docs/en/) for which additional config has been added in [.prettierrc.yaml](./.prettierrc.yaml):
 
-A [prettier](https://prettier.io/docs/en/) config has been added in [.prettierrc.json5](./.prettierrc.json5) .
+```bash
+prettier --write "**/*.{md,yml,yaml}"
+```
+
+:warning: Use 4 spaces for indentation of nested lists. Otherwise the nesting may not work. This is consistent with the [original MarkDown](https://daringfireball.net/projects/markdown/syntax#list) and the [CommonMark](https://spec.commonmark.org/0.31.2/#lists) specs.
 
 ### Linting
 
-A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint.jsonc](./.markdownlint.jsonc) .
+A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint-cli2.yaml](./.markdownlint-cli2.yaml):
 
-## Bugs
+```bash
+markdownlint-cli2 "**/*.md"
+```
 
--   https://github.com/prettier/prettier/issues/5019
+A [yamllint](https://yamllint.readthedocs.io/en/stable/index.html) config has been added in [.yamllint.yaml](./.yamllint.yaml):
 
-## Links
+```bash
+yamllint .
+```
 
--   Inspired by the work of [Bert Van Vreckem](https://github.com/bertvv) at https://github.com/HoGentTIN/hogent-revealjs
--   https://github.com/webpro/reveal-md
--   https://revealjs.com/
+You can also use the [pre-commit](https://pre-commit.com/) hooks in [.pre-commit-config.yaml](./.pre-commit-config.yaml) to automatically check this at every local commit.
