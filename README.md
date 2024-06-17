@@ -20,8 +20,6 @@ You can see the slides of this repository as a demo at https://hogenttin.github.
     -   [Automatic deployment](#automatic-deployment)
     -   [Formatting](#formatting)
     -   [Linting](#linting)
--   [Bugs](#bugs)
--   [Links](#links)
 
 ## Basic usage
 
