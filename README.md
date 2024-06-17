@@ -76,6 +76,12 @@ reveal-md <slides.md> --print slides.pdf --print-size A4
 
 _The resulting PDF isn't very nice though at the moment ... :/ ._
 
+---
+
+<details>
+
+<summary>Configuration</summary>
+
 ## Configuration
 
 :bulb: **You don't have to change these files or settings** if you want to keep things simple. In that case, just ignore this section.
@@ -118,6 +124,14 @@ You can add them to [reveal.json](./reveal.json) .
 
 You can add additional functionality using [Reveal.js plugins](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware). These are not standard supported in reveal-md, but can be [enabled](https://github.com/webpro/reveal-md/issues/102#issuecomment-692494366). E.g., the [Mermaid](https://github.com/zjffun/reveal.js-mermaid-plugin) plugin for drawing graphs is added in this repo as an example on how to do it.
 
+</details>
+
+---
+
+<details>
+
+<summary>Additional tools</summary>
+
 ## Additional tools
 
 :bulb: **You don't need this** if you want to keep things simple. In that case, just ignore this section. Otherwise, it's here if you want an example.
@@ -151,3 +165,5 @@ yamllint .
 ```
 
 You can also use the [pre-commit](https://pre-commit.com/) hooks in [.pre-commit-config.yaml](./.pre-commit-config.yaml) to automatically check this at every local commit.
+
+</details>
