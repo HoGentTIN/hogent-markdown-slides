@@ -37,7 +37,7 @@ jobs:
       - run: npm install -g reveal-md
       - run: reveal-md docs/ --static
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v2
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: ./html
       - id: deployment
