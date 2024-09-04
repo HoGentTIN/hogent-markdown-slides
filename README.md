@@ -4,23 +4,6 @@ Build slides using markdown, whilst adhering to the principles learned from the 
 
 You can see the slides of this repository as a demo at https://hogenttin.github.io/hogent-revealmd/ . Play with it to see what it can do!
 
--   [Basic usage](#basic-usage)
-    -   [Installation](#installation)
-    -   [How do I use this?](#how-do-i-use-this)
-    -   [Live preview](#live-preview)
-    -   [Create static site (HTML)](#create-static-site-html)
-    -   [Generate PDF](#generate-pdf)
--   [Configuration](#configuration)
-    -   [Theme](#theme)
-    -   [Landing page](#landing-page)
-    -   [reveal-md options](#reveal-md-options)
-    -   [reveal.js options](#revealjs-options)
-    -   [Reveal.js plugins](#revealjs-plugins)
--   [Additional tools](#additional-tools)
-    -   [Automatic deployment](#automatic-deployment)
-    -   [Formatting](#formatting)
-    -   [Linting](#linting)
-
 ## Basic usage
 
 ### Installation
@@ -86,25 +69,7 @@ _The resulting PDF isn't very nice though at the moment ... :/ ._
 
 ### Theme
 
-If you want another theme, you can change the `theme` option in [reveal-md.json](./reveal-md.json) to point to another CSS file. You can also use an existing link like https://hogenttin.github.io/hogent-revealjs/reveal.js/css/theme/hogent.css from https://github.com/HoGentTIN/hogent-revealjs .
-
-If you copy or fork this repo, but always want to keep the theme of your slides at any time automatically in sync with this repo, you can ... .
-
-a. Set the `theme` option to the URL https://hogenttin.github.io/hogent-revealmd/_assets/theme.css and delete the local CSS file.
-
-or
-
-b. Change `theme.css` so you import https://hogenttin.github.io/hogent-revealmd/_assets/theme.css and then you can add CSS overrides below:
-
-```css
-@import url(https://hogenttin.github.io/hogent-revealmd/_assets/theme.css);
-
-/* Add your overrides here, e.g. ... */
-
-ul {
-    color: red;
-}
-```
+If you want another theme, you can change the `theme` option in [reveal-md.json](./reveal-md.json) to point to another CSS file. You can also use an existing link to a CSS file on the internet or a local CSS file.
 
 ### Landing page
 
@@ -137,31 +102,5 @@ You can add additional functionality using [Reveal.js plugins](https://github.co
 ### Automatic deployment
 
 This repo automatically builds the slides and pushes them to https://hogenttin.github.io/hogent-revealmd/ whenever a commit is pushed to the `main` branch. This is done using using [GitHub actions](https://docs.github.com/en/actions) . You can find the workflow in the [.github](./.github) folder.
-
-### Formatting
-
-An [editorconfig](https://editorconfig.org/) config has been added in [.editorconfig](./.editorconfig). This works nicely together with [prettier](https://prettier.io/docs/en/) for which additional config has been added in [.prettierrc.yaml](./.prettierrc.yaml):
-
-```bash
-prettier --write "**/*.{md,yml,yaml}"
-```
-
-:warning: Use 4 spaces for indentation of nested lists. Otherwise the nesting may not work. This is consistent with the [original MarkDown](https://daringfireball.net/projects/markdown/syntax#list) and the [CommonMark](https://spec.commonmark.org/0.31.2/#lists) specs.
-
-### Linting
-
-A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint-cli2.yaml](./.markdownlint-cli2.yaml):
-
-```bash
-markdownlint-cli2 "**/*.md"
-```
-
-A [yamllint](https://yamllint.readthedocs.io/en/stable/index.html) config has been added in [.yamllint.yaml](./.yamllint.yaml):
-
-```bash
-yamllint .
-```
-
-You can also use the [pre-commit](https://pre-commit.com/) hooks in [.pre-commit-config.yaml](./.pre-commit-config.yaml) to automatically check this at every local commit.
 
 </details>

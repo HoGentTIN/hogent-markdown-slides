@@ -11,20 +11,6 @@ permissions:
   id-token: write
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - run: shopt -s globstar
-      - uses: actions/checkout@v4
-      - uses: DavidAnson/markdownlint-cli2-action@v16
-        with:
-          globs: "**/*.md"
-      - run: pip install yamllint
-      - run: yamllint --strict .
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
-        with:
-          use-quiet-mode: "yes"
-
   deploy:
     environment:
       name: github-pages

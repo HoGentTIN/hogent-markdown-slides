@@ -9,7 +9,7 @@
     ],
     "separator": "^\\s*---\\s*$",
     "staticDir": "html",
-    "theme": "theme.css",
+    "theme": "https://hogenttin.github.io/cdn/styles/reveal-js/slides.css",
     "title": "HOGENT - Slides",
     "verticalSeparator": "^\\s*-v-\\s*$"
 }
