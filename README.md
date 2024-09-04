@@ -17,7 +17,7 @@ You can see the slides of this repository as a demo at https://hogenttin.github.
 
 ### How do I use this?
 
-Edit, add or delete put your markdown files in the [docs](./docs/) folder. **That's all to get started!** :rocket:
+Edit, add or delete your markdown files in the [docs](./docs/) folder. **That's all to get started!** :rocket:
 
 ### Live preview
 
