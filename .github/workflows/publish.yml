@@ -1,6 +1,7 @@
 on:
   push:
-  pull_request:
+    branches:
+      - main
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -15,7 +16,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
