@@ -2,13 +2,21 @@
 
 Build slides using markdown, whilst adhering to the principles learned from the [How to avoid death By PowerPoint](https://www.youtube.com/watch?v=Iwpi1Lm6dFo) TEDx Talk.
 
-You can see the slides of this repository as a demo at https://hogenttin.github.io/hogent-revealmd/ . Play with it to see what it can do!
+You can see the slides of this repository as a demo at https://hogenttin.github.io/hogent-revealmd/. Play with it to see what it can do!
 
 ## Basic usage
 
 ### Installation
 
-1. Install [mkslides-reveal](https://pypi.org/project/mkslides-reveal/) :
+1. Install [python](https://www.python.org/downloads/).
+2. (optional) Create a [python environment](https://docs.python.org/3/library/venv.html). E.g. for Linux:
+
+    ```bash
+    python -m venv venv
+    source ./venv/bin/activate
+    ```
+
+3. Install [mkslides-reveal](https://pypi.org/project/mkslides-reveal/):
 
     ```bash
     pip install mkslides-reveal
@@ -16,7 +24,8 @@ You can see the slides of this repository as a demo at https://hogenttin.github.
 
 ### How do I use this?
 
-Edit, add or delete your markdown files in the [docs](./docs/) folder. **That's all to get started!** :rocket:
+
+Edit, add or delete your markdown files in the [docs](./docs/) directory, and run `mkslides-reveal build docs/` to generate the website in the [site](./site) folder. **That's all to get started!** :rocket:
 
 ### Live preview
 
@@ -25,20 +34,8 @@ Edit, add or delete your markdown files in the [docs](./docs/) folder. **That's 
 To start a local webserver with live reloading:
 
 ```bash
-mkslides-reveal serve <markdown_file_or_folder>
+mkslides-reveal serve docs/
 ```
-
-### Create static site (HTML)
-
-To generate a static site:
-
-```bash
-mkslides-reveal build <markdown_file_or_folder>
-```
-
-This will create the `site` folder. You can always delete this directory if you want to.
-
-_This step is only necessary if you want to host your slides yourself on a webserver. If you use Github actions (see below), this step is not needed: it will be done automatically when you push to the repository._
 
 ---
 
@@ -52,23 +49,23 @@ _This step is only necessary if you want to host your slides yourself on a webse
 
 ### Theme
 
-If you want another theme, you can change the `theme` option in [mkslides.yml](./mkslides.yml) to point to another CSS file. You can also use an existing link to a CSS file on the internet or a local CSS file.
+If you want another theme, you can change the `theme` entries in [mkslides.yml](./mkslides.yml). You can use a local CSS file or an existing link to a CSS file on the internet.
 
 ### Landing page
 
-You can add a template to create a nice landing page for your course. It uses the [Mustache template engine](https://mustache.github.io/) . See [mkslides-reveal](https://pypi.org/project/mkslides-reveal/) for more information.
+You can add a template to create a nice landing page for your course. It uses the [Mustache template engine](https://mustache.github.io/). See [mkslides-reveal](https://pypi.org/project/mkslides-reveal/) for more information.
 
-### [mkslides-reveal](https://github.com/MartenBE/mkslides-reveal) options
+### [mkslides-reveal](https://pypi.org/project/mkslides-reveal/) options
 
-You can add them to [mkslides.yml](./mkslides.yml) .
+You can add them to [mkslides.yml](./mkslides.yml).
 
 ### [reveal.js](https://revealjs.com/) options
 
-You can also add them to [mkslides.yml](./mkslides.yml) .
+You can also add them to [mkslides.yml](./mkslides.yml).
 
 ### Reveal.js plugins
 
-You can add additional functionality using [Reveal.js plugins](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware) in [mkslides.yml](./mkslides.yml). E.g., the [Mermaid](https://github.com/zjffun/reveal.js-mermaid-plugin) plugin for drawing graphs is added in this repo as an example on how to do it. See [mkslides-reveal](https://pypi.org/project/mkslides-reveal/) for more information.
+You can add additional functionality using [Reveal.js plugins](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware) in the `plugins` entries in [mkslides.yml](./mkslides.yml). E.g., the [Mermaid](https://github.com/zjffun/reveal.js-mermaid-plugin) plugin for drawing graphs is added in this repo as an example on how to do it.
 
 </details>
 
