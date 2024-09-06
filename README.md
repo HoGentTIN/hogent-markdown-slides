@@ -8,11 +8,10 @@ You can see the slides of this repository as a demo at https://hogenttin.github.
 
 ### Installation
 
-1. Install [nodejs](https://nodejs.org) .
-2. Install [reveal-md](https://github.com/webpro/reveal-md) :
+1. Install [mkslides-reveal](https://pypi.org/project/mkslides-reveal/) :
 
     ```bash
-    npm install --global reveal-md
+    pip install mkslides-reveal
     ```
 
 ### How do I use this?
@@ -21,18 +20,12 @@ Edit, add or delete your markdown files in the [docs](./docs/) folder. **That's 
 
 ### Live preview
 
-Reveal-md allows you to start up a live preview, so you can instantly see how your slides look like whilst editing the markdown files.
+`mkslides-reveal` allows you to start up a live preview, so you can instantly see how your slides look like whilst editing the markdown files.
 
-To develop a slideshow with live reloading:
-
-```bash
-reveal-md <slides.md> --watch
-```
-
-Or all slideshows:
+To start a local webserver with live reloading:
 
 ```bash
-reveal-md . --watch
+mkslides-reveal serve <markdown_file_or_folder>
 ```
 
 ### Create static site (HTML)
@@ -40,22 +33,12 @@ reveal-md . --watch
 To generate a static site:
 
 ```bash
-reveal-md --static
+mkslides-reveal build <markdown_file_or_folder>
 ```
 
-This will create the `html` folder. You can always delete this directory if you want to.
+This will create the `site` folder. You can always delete this directory if you want to.
 
 _This step is only necessary if you want to host your slides yourself on a webserver. If you use Github actions (see below), this step is not needed: it will be done automatically when you push to the repository._
-
-### Generate PDF
-
-To generate a PDF:
-
-```bash
-reveal-md <slides.md> --print slides.pdf --print-size A4
-```
-
-_The resulting PDF isn't very nice though at the moment ... :/ ._
 
 ---
 
@@ -69,23 +52,23 @@ _The resulting PDF isn't very nice though at the moment ... :/ ._
 
 ### Theme
 
-If you want another theme, you can change the `theme` option in [reveal-md.json](./reveal-md.json) to point to another CSS file. You can also use an existing link to a CSS file on the internet or a local CSS file.
+If you want another theme, you can change the `theme` option in [mkslides.yml](./mkslides.yml) to point to another CSS file. You can also use an existing link to a CSS file on the internet or a local CSS file.
 
 ### Landing page
 
-You can change the template [index-template.html](./index-template.html) to create a nice landing page for your course. It uses the [Mustache template engine](https://mustache.github.io/) .
+You can add a template to create a nice landing page for your course. It uses the [Mustache template engine](https://mustache.github.io/) . See [mkslides-reveal](https://pypi.org/project/mkslides-reveal/) for more information.
 
-### [reveal-md](https://github.com/webpro/reveal-md) options
+### [mkslides-reveal](https://github.com/MartenBE/mkslides-reveal) options
 
-You can add them to [reveal-md.json](./reveal-md.json) .
+You can add them to [mkslides.yml](./mkslides.yml) .
 
 ### [reveal.js](https://revealjs.com/) options
 
-You can add them to [reveal.json](./reveal.json) .
+You can also add them to [mkslides.yml](./mkslides.yml) .
 
 ### Reveal.js plugins
 
-You can add additional functionality using [Reveal.js plugins](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware). These are not standard supported in reveal-md, but can be [enabled](https://github.com/webpro/reveal-md/issues/102#issuecomment-692494366). E.g., the [Mermaid](https://github.com/zjffun/reveal.js-mermaid-plugin) plugin for drawing graphs is added in this repo as an example on how to do it.
+You can add additional functionality using [Reveal.js plugins](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware) in [mkslides.yml](./mkslides.yml). E.g., the [Mermaid](https://github.com/zjffun/reveal.js-mermaid-plugin) plugin for drawing graphs is added in this repo as an example on how to do it. See [mkslides-reveal](https://pypi.org/project/mkslides-reveal/) for more information.
 
 </details>
 
