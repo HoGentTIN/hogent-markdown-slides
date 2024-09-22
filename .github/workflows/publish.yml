@@ -23,8 +23,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install mkslides-reveal
-      - run: mkslides-reveal build docs/
+      - run: pip install mkslides
+      - run: mkslides build docs/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./site

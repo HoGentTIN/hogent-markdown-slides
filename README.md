@@ -16,25 +16,25 @@ You can see the slides of this repository as a demo at https://hogenttin.github.
     source ./venv/bin/activate
     ```
 
-3. Install [mkslides-reveal](https://pypi.org/project/mkslides-reveal/):
+3. Install [mkslides](https://pypi.org/project/mkslides/):
 
     ```bash
-    pip install mkslides-reveal
+    pip install mkslides
     ```
 
 ### How do I use this?
 
 
-Edit, add or delete your markdown files in the [docs](./docs/) directory, and run `mkslides-reveal build docs/` to generate the website in the [site](./site) folder. **That's all to get started!** :rocket:
+Edit, add or delete your markdown files in the [docs](./docs/) directory, and run `mkslides build docs/` to generate the website in the [site](./site) folder. **That's all to get started!** :rocket:
 
 ### Live preview
 
-`mkslides-reveal` allows you to start up a live preview, so you can instantly see how your slides look like whilst editing the markdown files.
+`mkslides` allows you to start up a live preview, so you can instantly see how your slides look like whilst editing the markdown files.
 
 To start a local webserver with live reloading:
 
 ```bash
-mkslides-reveal serve docs/
+mkslides serve docs/
 ```
 
 ---
@@ -53,9 +53,9 @@ If you want another theme, you can change the `theme` entries in [mkslides.yml](
 
 ### Landing page
 
-You can add a template to create a nice landing page for your course. It uses the [Mustache template engine](https://mustache.github.io/). See [mkslides-reveal](https://pypi.org/project/mkslides-reveal/) for more information.
+You can add a template to create a nice landing page for your course. It uses the [Mustache template engine](https://mustache.github.io/). See [mkslides](https://pypi.org/project/mkslides/) for more information.
 
-### [mkslides-reveal](https://pypi.org/project/mkslides-reveal/) options
+### [mkslides](https://pypi.org/project/mkslides/) options
 
 You can add them to [mkslides.yml](./mkslides.yml).
 
