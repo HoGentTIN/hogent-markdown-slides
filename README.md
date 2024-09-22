@@ -24,7 +24,6 @@ You can see the slides of this repository as a demo at https://hogenttin.github.
 
 ### How do I use this?
 
-
 Edit, add or delete your markdown files in the [docs](./docs/) directory, and run `mkslides build docs/` to generate the website in the [site](./site) folder. **That's all to get started!** :rocket:
 
 ### Live preview
