@@ -2,7 +2,7 @@
 
 Build slides using markdown, whilst adhering to the principles learned from the [How to avoid death By PowerPoint](https://www.youtube.com/watch?v=Iwpi1Lm6dFo) TEDx Talk.
 
-You can see the slides of this repository as a demo at https://github.com/HoGentTIN/hogent-markdown-slides . Play with it to see what it can do!
+You can see the slides of this repository as a demo at https://hogenttin.github.io/hogent-markdown-slides/ . Play with it to see what it can do!
 
 ## Basic usage
 
