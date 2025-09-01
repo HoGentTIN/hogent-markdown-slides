@@ -25,7 +25,7 @@ jobs:
           python-version: '3.12'
       - run: pip install mkslides
       - run: mkslides build docs/
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: ./site
       - id: deployment
