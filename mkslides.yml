@@ -13,9 +13,12 @@ revealjs:
   height: 1080
   width: 1920
   transition: fade
+  plantuml:
+    serverPath: "https://www.plantuml.com/plantuml/svg/"
 plugins:
   - name: RevealMermaid
     extra_javascript:
       - https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin/plugin/mermaid/mermaid.min.js
   - extra_javascript:
       - https://cdn.jsdelivr.net/npm/reveal-plantuml/dist/reveal-plantuml.min.js
+      # Don't forget to set the `plantuml` > `serverPath` option in the `revealjs` options above!
